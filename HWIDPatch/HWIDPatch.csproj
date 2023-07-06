@@ -7,4 +7,17 @@
         <UseAltLibs>true</UseAltLibs>
         <Version>1.0.2.0</Version>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="LavaGang.MelonLoader" Version="0.6.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="0Harmony">
+        <HintPath>G:\SteamLibrary\steamapps\common\Storm Chasers\MelonLoader\net6\0Harmony.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule">
+        <HintPath>..\..\..\UnityAssemblies\UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+    </ItemGroup>
 </Project>
