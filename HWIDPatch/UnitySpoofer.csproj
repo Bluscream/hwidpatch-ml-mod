@@ -20,4 +20,8 @@
         <HintPath>..\..\..\UnityAssemblies\UnityEngine.CoreModule.dll</HintPath>
       </Reference>
     </ItemGroup>
+
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+      <Exec Command="copy /y &quot;$(TargetPath)&quot; &quot;D:\OneDrive\Games\Storm Chasers\Mods\$(TargetName)$(TargetExt)&quot;" />
+    </Target>
 </Project>
